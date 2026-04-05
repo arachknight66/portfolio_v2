@@ -9,8 +9,14 @@ export const CustomCursor = () => {
     const lineXRef = useRef<HTMLDivElement>(null);
     const lineYRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
+    const [isTouchDevice, setIsTouchDevice] = useState(false);
 
     useEffect(() => {
+        const handleTouchCheck = () => {
+            setIsTouchDevice(window.matchMedia("(pointer: coarse)").matches);
+        };
+        handleTouchCheck();
+
         const cursor = cursorRef.current;
         const follower = followerRef.current;
         const lineX = lineXRef.current;
@@ -54,6 +60,8 @@ export const CustomCursor = () => {
             window.removeEventListener("mouseover", handleMouseOver);
         };
     }, []);
+
+    if (isTouchDevice) return null;
 
     return (
         <div className="fixed inset-0 pointer-events-none z-[9999]">

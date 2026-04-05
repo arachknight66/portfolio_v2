@@ -27,7 +27,7 @@ export const Education = () => {
     const isBooted = useStore((state) => state.isBooted);
 
     return (
-        <section id="education" className="py-20 px-10 max-w-7xl mx-auto min-h-[50vh] flex flex-col justify-center">
+        <section id="education" className="py-20 px-6 md:px-10 max-w-7xl mx-auto min-h-[50vh] flex flex-col justify-center">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={isBooted ? { opacity: 1 } : { opacity: 0 }}
@@ -37,7 +37,7 @@ export const Education = () => {
                 <span className="font-mono text-neon-cyan text-[10px] tracking-[0.4em] uppercase mb-4 block">
                     System_Archive // Education_History
                 </span>
-                <h2 className="text-4xl md:text-6xl font-display uppercase tracking-tight text-white font-bold">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-display uppercase tracking-tight text-white font-bold">
                     ACADEMIC_NODES
                 </h2>
             </motion.div>

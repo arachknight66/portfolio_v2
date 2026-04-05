@@ -26,9 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <CustomCursor />
 
                     {/* Navigation */}
-                    <nav className="fixed top-0 w-full p-8 z-50 flex justify-between font-mono text-[10px] tracking-[0.4em] uppercase text-white/80">
+                    <nav className="fixed top-0 w-full p-8 z-40 flex justify-between font-mono text-[10px] tracking-[0.4em] uppercase text-white/80">
                         <span className="text-cyan-400">User // Daksh_Saini</span>
-                        <div className="flex gap-8">
+                        <div className="hidden md:flex gap-8">
                             <a href="#sector-01" className="hover:text-cyan-400 transition-colors">Home</a>
                             <a href="#tech-stack" className="hover:text-cyan-400 transition-colors">Skills</a>
                             <a href="#sector-02" className="hover:text-cyan-400 transition-colors">Projects</a>

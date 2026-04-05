@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const ProjectOverlay = ({ id, project, onClose }: any) => {
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-20">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-0 sm:p-4 md:p-20">
             <motion.div
                 layoutId={`card-${id}`}
                 className="relative w-full max-w-5xl h-full md:h-[80vh] bg-grid-dark border border-neon-cyan/50 overflow-hidden"
@@ -15,7 +15,7 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
                     data-lenis-prevent
                 >
                     {/* Top Image Section */}
-                    <div className="relative w-full h-[300px] md:h-[450px] bg-black/60 flex items-center justify-center p-6 border-b border-white/10 shrink-0">
+                    <div className="relative w-full h-[250px] sm:h-[300px] md:h-[450px] bg-black/60 flex items-center justify-center p-6 border-b border-white/10 shrink-0">
                         <motion.div
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
                     <div className="w-full p-8 md:p-16">
                         <button
                             onClick={onClose}
-                            className="absolute top-8 right-8 z-10 text-neon-cyan font-mono text-xs hover:text-white transition-colors bg-black/50 p-2 border border-white/5"
+                            className="absolute top-20 right-4 md:top-8 md:right-8 z-10 text-neon-cyan font-mono text-[10px] md:text-xs hover:text-white transition-colors bg-black/50 p-2 border border-white/5"
                         >
                             [ DISCONNECT_SESSION ]
                         </button>
@@ -60,7 +60,7 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
                                     <motion.p layoutId={`cat-${id}`} className="text-neon-cyan font-mono text-xs uppercase tracking-[0.3em] mb-3">
                                         {project.category}
                                     </motion.p>
-                                    <motion.h2 layoutId={`title-${id}`} className="text-4xl md:text-6xl font-display uppercase leading-none text-white">
+                                    <motion.h2 layoutId={`title-${id}`} className="text-3xl sm:text-4xl md:text-6xl font-display uppercase leading-none text-white">
                                         {project.title}
                                     </motion.h2>
                                 </div>
@@ -80,7 +80,7 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-white/10 pt-12">
                                 <div className="md:col-span-2 space-y-6">
                                     <h4 className="font-mono text-xs text-white/40 uppercase tracking-widest">Mission_Briefing</h4>
-                                    <p className="text-slate-300 font-light leading-relaxed text-base md:text-lg">
+                                    <p className="text-slate-300 font-light leading-relaxed text-sm md:text-lg">
                                         {project.fullDescription}
                                     </p>
                                 </div>

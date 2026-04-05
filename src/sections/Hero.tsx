@@ -59,7 +59,7 @@ export const Hero = () => {
             >
                 <motion.span 
                     variants={itemVariants}
-                    className="font-mono text-cyan-500 text-xs tracking-[0.5em] mb-4 block animate-pulse"
+                    className="font-mono text-cyan-500 text-[10px] md:text-xs tracking-[0.2em] md:tracking-[0.5em] mb-4 block animate-pulse"
                 >
                     PROGRAM_INITIALIZING // DAKSH_SAINI
                 </motion.span>
@@ -67,13 +67,13 @@ export const Hero = () => {
                     variants={itemVariants}
                     ref={textRef}
                     data-value="DAKSH_SAINI"
-                    className="text-8xl md:text-[10rem] font-display uppercase tracking-tighter leading-none text-white text-shadow-neon"
+                    className="text-5xl sm:text-6xl md:text-[10rem] font-display uppercase tracking-tighter leading-none text-white text-shadow-neon"
                 >
                     DAKSH_SAINI
                 </motion.h1>
                 <motion.p 
                     variants={itemVariants}
-                    className="max-w-2xl mx-auto mt-8 font-light text-slate-400 tracking-wide text-sm px-6 leading-relaxed"
+                    className="max-w-2xl mx-auto mt-6 md:mt-8 font-light text-slate-400 tracking-wide text-xs md:text-sm px-6 leading-relaxed"
                 >
                     Second-year Computer Science undergraduate at USICT with a foundation in data analysis, Web Dev, and applied physics. Passionate about problem-solving at the intersection of technology, physics, and space science.
                 </motion.p>

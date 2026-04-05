@@ -39,7 +39,7 @@ export const ProjectGallery = () => {
     const [selectedId, setSelectedId] = useState<string | null>(null);
 
     return (
-        <section className="p-10 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
+        <section className="px-6 py-20 md:p-10 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={isBooted ? { opacity: 1 } : { opacity: 0 }}
@@ -49,7 +49,7 @@ export const ProjectGallery = () => {
                 <span className="font-mono text-neon-cyan text-[10px] tracking-[0.4em] uppercase mb-4 block">
                     Portfolio_Segments // Research_&_Dev
                 </span>
-                <h2 className="text-4xl md:text-6xl font-display uppercase tracking-tight text-white">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-display uppercase tracking-tight text-white">
                     MISSION_OUTPUT
                 </h2>
             </motion.div>

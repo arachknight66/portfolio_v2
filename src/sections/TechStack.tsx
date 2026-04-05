@@ -30,7 +30,7 @@ export const TechStack = () => {
     const isBooted = useStore((state) => state.isBooted);
 
     return (
-        <section id="tech-stack" className="py-20 px-10 max-w-7xl mx-auto">
+        <section id="tech-stack" className="py-20 px-6 md:px-10 max-w-7xl mx-auto">
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={isBooted ? { opacity: 1 } : { opacity: 0 }}
@@ -40,7 +40,7 @@ export const TechStack = () => {
                 <span className="font-mono text-neon-cyan text-[10px] tracking-[0.4em] uppercase mb-4 block">
                     System_Capabilities // Tech_Stack
                 </span>
-                <h2 className="text-4xl md:text-6xl font-display uppercase tracking-tight text-white">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-display uppercase tracking-tight text-white">
                     CORE_PROTOCOLS
                 </h2>
             </motion.div>
@@ -60,7 +60,7 @@ const CategoryItem = ({ category, index, isBooted }: { category: typeof SKILL_CA
         whileInView={isBooted ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ delay: index * 0.1, duration: 0.6 }}
         viewport={{ once: true }}
-        className="relative p-8 border border-white/5 bg-white/[0.02] hover:border-neon-cyan/30 transition-colors group"
+        className="relative p-6 md:p-8 border border-white/5 bg-white/[0.02] hover:border-neon-cyan/30 transition-colors group"
     >
         <div className="flex items-center gap-4 mb-6">
             <span className="text-2xl">{category.icon}</span>

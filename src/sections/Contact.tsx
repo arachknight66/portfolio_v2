@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, Terminal } from "lucide-react";
 
 export const Contact = () => {
     return (
-        <section id="sector-02" className="min-h-screen flex flex-col items-center justify-center p-10 relative overflow-hidden">
+        <section id="sector-02" className="min-h-screen flex flex-col items-center justify-center p-6 md:p-10 relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-cyan/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -13,14 +13,14 @@ export const Contact = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="relative z-10 w-full max-w-4xl border border-white/5 bg-black/40 backdrop-blur-xl p-12 md:p-20 text-center"
+                className="relative z-10 w-full max-w-4xl border border-white/5 bg-black/40 backdrop-blur-xl p-6 sm:p-12 md:p-20 text-center"
             >
                 <div className="inline-flex items-center gap-2 px-4 py-1 border border-neon-cyan/30 rounded-full mb-8">
                     <div className="w-2 h-2 rounded-full bg-neon-cyan animate-pulse" />
                     <span className="font-mono text-[10px] text-neon-cyan tracking-[0.2em] uppercase">Status: Available for Breach</span>
                 </div>
 
-                <h2 className="text-4xl md:text-6xl font-display uppercase tracking-tighter mb-8 text-white">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-display uppercase tracking-tighter mb-8 text-white">
                     Establish_Connection
                 </h2>
 
