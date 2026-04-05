@@ -9,6 +9,12 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
                 className="relative w-full max-w-5xl h-full md:h-[80vh] bg-grid-dark border border-neon-cyan/50 overflow-hidden"
                 style={{ borderRadius: "2px" }}
             >
+                <button
+                    onClick={onClose}
+                    className="absolute top-20 right-4 md:top-8 md:right-8 z-[110] text-neon-cyan font-mono text-[10px] md:text-xs hover:text-white transition-colors bg-black/50 p-2 border border-white/5"
+                >
+                    [ DISCONNECT_SESSION ]
+                </button>
                 {/* Vertical Scrollable Container */}
                 <div 
                     className="relative h-full flex flex-col overflow-y-auto scrollbar-hide md:custom-scrollbar"
@@ -42,12 +48,7 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
 
                     {/* Bottom Data Section */}
                     <div className="w-full p-8 md:p-16">
-                        <button
-                            onClick={onClose}
-                            className="absolute top-20 right-4 md:top-8 md:right-8 z-10 text-neon-cyan font-mono text-[10px] md:text-xs hover:text-white transition-colors bg-black/50 p-2 border border-white/5"
-                        >
-                            [ DISCONNECT_SESSION ]
-                        </button>
+
 
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -101,6 +102,20 @@ export const ProjectOverlay = ({ id, project, onClose }: any) => {
                                             <span className="text-neon-cyan">AES-256</span>
                                         </div>
                                     </div>
+
+                                    {project.github && (
+                                        <motion.a 
+                                            initial={{ opacity: 0 }}
+                                            animate={{ opacity: 1 }}
+                                            transition={{ delay: 0.6 }}
+                                            href={project.github} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="mt-6 block w-full py-3 border border-neon-cyan/30 bg-neon-cyan/5 text-neon-cyan font-mono text-[10px] text-center hover:bg-neon-cyan/20 hover:border-neon-cyan transition-all uppercase tracking-[0.2em]"
+                                        >
+                                            [ ACCESS_SOURCE_REPOSITORY ]
+                                        </motion.a>
+                                    )}
                                 </div>
                             </div>
                         </motion.div>

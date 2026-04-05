@@ -511,14 +511,11 @@ body {
 .top-10 {
   top: 2.5rem;
 }
-.top-4 {
-  top: 1rem;
+.top-20 {
+  top: 5rem;
 }
 .top-6 {
   top: 1.5rem;
-}
-.top-20 {
-  top: 5rem;
 }
 .-z-10 {
   z-index: -10;
@@ -532,14 +529,14 @@ body {
 .z-40 {
   z-index: 40;
 }
-.z-50 {
-  z-index: 50;
+.z-\[100\] {
+  z-index: 100;
+}
+.z-\[110\] {
+  z-index: 110;
 }
 .z-\[9999\] {
   z-index: 9999;
-}
-.z-\[100\] {
-  z-index: 100;
 }
 .mx-auto {
   margin-left: auto;
@@ -1040,12 +1037,6 @@ body {
 .p-0 {
   padding: 0px;
 }
-.p-10 {
-  padding: 2.5rem;
-}
-.p-12 {
-  padding: 3rem;
-}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1088,6 +1079,10 @@ body {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -1465,12 +1460,21 @@ html.lenis {
   background-color: rgb(6 182 212 / 0.3);
 }
 
+.hover\:border-neon-cyan:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 229 255 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-neon-cyan\/30:hover {
   border-color: rgb(0 229 255 / 0.3);
 }
 
 .hover\:border-neon-cyan\/50:hover {
   border-color: rgb(0 229 255 / 0.5);
+}
+
+.hover\:bg-neon-cyan\/20:hover {
+  background-color: rgb(0 229 255 / 0.2);
 }
 
 .hover\:bg-neon-cyan\/\[0\.03\]:hover {
@@ -1486,6 +1490,10 @@ html.lenis {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+
+.hover\:border-neon-cyan:hover {
+        border-color: #00E5FF;
+    }
 
 .group:hover .group-hover\:max-h-20 {
   max-height: 5rem;
@@ -1544,11 +1552,11 @@ html.lenis {
   .sm\:h-\[300px\] {
     height: 300px;
   }
-  .sm\:p-4 {
-    padding: 1rem;
-  }
   .sm\:p-12 {
     padding: 3rem;
+  }
+  .sm\:p-4 {
+    padding: 1rem;
   }
   .sm\:text-4xl {
     font-size: 2.25rem;

@@ -12,9 +12,10 @@ export const projects = [
         id: "1",
         title: "DYNAMICAL_MASS",
         category: "Astrophysics",
-        img: "/p1.png",
+        img: "/dynamic_mass.png",
         description: "Computational pipeline for virial mass estimation of galaxy clusters.",
-        fullDescription: "An algorithmic suite designed for high-precision mass estimation of galaxy clusters. Utilizing spectroscopic data from the SDSS DR16, the system performs phase-space analysis and mass function integration to resolve virial dynamics with minimal statistical noise."
+        fullDescription: "An algorithmic suite designed for high-precision mass estimation of galaxy clusters. Utilizing spectroscopic data from the SDSS DR16, the system performs phase-space analysis and mass function integration to resolve virial dynamics with minimal statistical noise.",
+        github: "https://github.com/arachknight66/dynamical_mass_estimator"
     },
     {
         id: "2",
