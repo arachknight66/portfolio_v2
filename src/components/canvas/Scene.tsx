@@ -43,7 +43,7 @@ export const Scene = () => {
                     <TronGrid velocity={velocity} />
                 </Float>
 
-                <EffectComposer disableNormalPass>
+                <EffectComposer>
                     <Bloom
                         luminanceThreshold={0.2}
                         mipmapBlur
