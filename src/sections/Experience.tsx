@@ -41,8 +41,9 @@ export const Experience = () => {
                 <span className="font-mono text-neon-cyan text-[10px] tracking-[0.4em] uppercase mb-4 block">
                     System_Log // Mission_Experience
                 </span>
-                <h2 className="text-3xl sm:text-4xl md:text-6xl font-display uppercase tracking-tight text-white font-bold">
-                    OPERATIONAL_HISTORY
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-display uppercase tracking-tight text-white font-bold flex flex-col sm:block">
+                    <span>OPERATIONAL_</span>
+                    <span>HISTORY</span>
                 </h2>
             </motion.div>
 

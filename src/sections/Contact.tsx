@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Terminal } from "lucide-react";
+import { Mail, Github, Linkedin, Terminal, FileText } from "lucide-react";
 
 export const Contact = () => {
     return (
@@ -33,6 +33,7 @@ export const Contact = () => {
                     <ContactLink icon={<Mail size={20} />} label="Email" href="mailto:dakshsaini889@gmail.com" />
                     <ContactLink icon={<Github size={20} />} label="Github" href="https://github.com/arachknight66" />
                     <ContactLink icon={<Linkedin size={20} />} label="LinkedIn" href="https://linkedin.com/in/daksh889" />
+                    <ContactLink icon={<FileText size={20} />} label="Resume" href="/resume.pdf" />
                 </div>
 
                 {/* Decorative Terminal Line */}

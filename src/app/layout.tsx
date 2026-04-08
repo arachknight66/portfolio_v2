@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import { Scene } from "@/components/canvas/Scene";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import { SplashScreen } from "@/components/ui/SplashScreen";
@@ -21,8 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <SplashScreen />
 
                 <SmoothScroll>
-                    {/* Persistent WebGL Layer */}
-                    <Scene />
+                    {/* Persistent WebGL Layer Removed */}
                     <CustomCursor />
 
                     {/* Navigation */}
@@ -35,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <a href="#education" className="hover:text-cyan-400 transition-colors">Education</a>
                             <a href="#experience" className="hover:text-cyan-400 transition-colors">Experience</a>
                             <a href="#sector-02" className="hover:text-cyan-400 transition-colors">Contact</a>
+                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Resume</a>
                         </div>
                     </nav>
 
