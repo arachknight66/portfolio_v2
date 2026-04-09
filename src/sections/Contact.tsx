@@ -33,7 +33,7 @@ export const Contact = () => {
                     <ContactLink icon={<Mail size={20} />} label="Email" href="mailto:dakshsaini889@gmail.com" />
                     <ContactLink icon={<Github size={20} />} label="Github" href="https://github.com/arachknight66" />
                     <ContactLink icon={<Linkedin size={20} />} label="LinkedIn" href="https://linkedin.com/in/daksh889" />
-                    <ContactLink icon={<FileText size={20} />} label="Resume" href="/resume.pdf" />
+                    <ContactLink icon={<FileText size={20} />} label="Resume" href="https://drive.google.com/file/d/1-6I9p6bxriLRVFLvBw2FTMFzB0FD8GlC/view?usp=sharing" />
                 </div>
 
                 {/* Decorative Terminal Line */}
