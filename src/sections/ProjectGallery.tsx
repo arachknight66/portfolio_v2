@@ -27,12 +27,21 @@ export const projects = [
         github: "https://github.com/arachknight66/IFU_Spectral_Cube"
     },
     {
-        id: "3",
+        id: "4",
         title: "CULTURAL_FEST_WEBSITE",
         category: "Web Development",
         img: "/anugoonj26.png",
         description: "Website for Guru Gobind Singh Indraprastha University's Annual Cultural Fest 2026.",
         fullDescription: "Designed and developed the website for Guru Gobind Singh Indraprastha University's Annual Cultural Fest 2026 with large team"
+    },
+    {
+        id: "3",
+        title: "FOURIER_FILTERING",
+        category: "Signal Processing",
+        img: "/Fourier_Tool.png",
+        description: "A Fourier-Domain Framework for Generalized Signal Filtering and Denoising.",
+        fullDescription: "A General-Purpose Fourier-Domain Framework designed to democratize signal analysis. By leveraging the Fast Fourier Transform (FFT) and a modular filter design engine, this system provides a mathematically rigorous and computationally efficient tool for analyzing and denoising diverse one-dimensional datasets.",
+        github: "https://github.com/arachknight66/Fourier_Tool"
     },
 ];
 
