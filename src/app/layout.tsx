@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <a href="#education" className="hover:text-cyan-400 transition-colors">Education</a>
                             <a href="#experience" className="hover:text-cyan-400 transition-colors">Experience</a>
                             <a href="#sector-02" className="hover:text-cyan-400 transition-colors">Contact</a>
-                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Resume</a>
+                            <a href="https://drive.google.com/file/d/1gyvf4WXUFDlGe0gQXSujS6hz1cmB6tvy/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Resume</a>
                         </div>
                     </nav>
 
