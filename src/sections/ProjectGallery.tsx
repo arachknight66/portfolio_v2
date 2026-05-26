@@ -11,7 +11,7 @@ export const projects = [
     {
         id: "1",
         title: "DYNAMICAL_MASS",
-        category: "Astrophysics",
+        category: "Data Processing",
         img: "/dynamic_mass.png",
         description: "Computational pipeline for virial mass estimation of galaxy clusters.",
         fullDescription: "An algorithmic suite designed for high-precision mass estimation of galaxy clusters. Utilizing spectroscopic data from the SDSS DR16, the system performs phase-space analysis and mass function integration to resolve virial dynamics with minimal statistical noise.",
@@ -19,7 +19,7 @@ export const projects = [
     },
     {
         id: "2",
-        title: "JWST_SPECTRAL",
+        title: "Data Processing",
         category: "Scientific Computing",
         img: "/JWST_MIRI_IFU.png",
         description: "Spectral line identification in NGC 7469 using AstroPy and MIRI data.",
