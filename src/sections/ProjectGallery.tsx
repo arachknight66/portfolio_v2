@@ -19,8 +19,8 @@ export const projects = [
     },
     {
         id: "2",
-        title: "Data Processing",
-        category: "Scientific Computing",
+        title: "JWST_SPECTRAL",
+        category: "Data Processing",
         img: "/JWST_MIRI_IFU.png",
         description: "Spectral line identification in NGC 7469 using AstroPy and MIRI data.",
         fullDescription: "Deep extraction of ionic emission kernels from James Webb Space Telescope Mid-Infrared Instrument (MIRI) spectroscopic cubes. The project utilizes AstroPy and custom signal processing to probe the kinetics of ionized gas in the active galactic nucleus of NGC 7469.",
