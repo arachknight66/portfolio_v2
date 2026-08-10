@@ -75,7 +75,7 @@ export const Hero = () => {
                     variants={itemVariants}
                     className="max-w-2xl mx-auto mt-6 md:mt-8 font-light text-slate-400 tracking-wide text-xs md:text-sm px-6 leading-relaxed"
                 >
-                    Second-year Computer Science undergraduate at USICT with a foundation in data analysis, Web Dev, and applied physics. Passionate about problem-solving at the intersection of technology, physics, and space science.
+                    Third-year Computer Science undergraduate at USICT with a foundation in data analysis, Web Dev, and applied physics. Passionate about problem-solving at the intersection of technology, physics, and space science.
                 </motion.p>
             </motion.div>
 
